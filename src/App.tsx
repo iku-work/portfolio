@@ -61,7 +61,7 @@ const EXPERIENCES: ExperienceItem[] = [
     highlight: '20+ deployments · 5 customer sites',
     bullets: [
       'Presented embedded AI analytics demos to customers at 5+ sites across Finland',
-      'Cut false-positive detections from 15% to near-zero by redesigning sensor stack (ultrasonic → ESP32 + VL53L1X)',
+      'Replaced the off-the-shelf ultrasonic sensor with our own ESP32 + VL53L1X design after customers questioned the readings; wrong readings dropped to almost none',
       'Built CI/CD pipeline and JavaScript monitoring dashboard for faster rollouts',
     ],
     tags: ['IoT', 'AI Analytics', 'ESP32', 'CI/CD', 'Customer Demos'],
@@ -76,7 +76,7 @@ const EXPERIENCES: ExperienceItem[] = [
     highlight: '95% RL task success · IEEE published',
     bullets: [
       'Built RL-driven Mevea simulations of autonomous excavators & forestry forwarders',
-      'Designed Python APIs linking simulation engines to control systems — cut cycle time by 40%',
+      'Designed Python APIs linking simulation engines to control systems',
       'Built Unity (C#) simulation modules for industrial worker behaviour modelling',
       'Presented at Mevea conferences; contributed to Business Finland grants',
     ],
@@ -103,10 +103,10 @@ const EXPERIENCES: ExperienceItem[] = [
     period: '2018',
     dotColor: 'cyan',
     side: 'left',
-    highlight: 'Graded with distinction · <20ms latency',
+    highlight: 'Graded with distinction',
     bullets: [
       'Built C++/Python co-simulation framework linking Mevea and Unreal Engine 4 via UDP',
-      'Achieved <20ms synchronisation latency across physics, visualisation & operator control',
+      'Synchronised physics, visualisation & operator control in real time',
       'Integrated Leap Motion VR gesture controls for immersive digital twin testing',
     ],
     tags: ['C++', 'Python', 'Mevea', 'UE4', 'UDP', 'VR', 'Leap Motion'],
@@ -203,13 +203,13 @@ const SKILL_GROUPS: SkillGroupItem[] = [
     category: 'AI & Machine Learning',
     icon: '🤖',
     color: 'purple',
-    skills: ['Reinforcement Learning', 'Keras / TensorFlow', 'ROS', 'Simulation APIs', 'Python (Advanced)', 'AI Analytics'],
+    skills: ['Reinforcement Learning', 'Keras / TensorFlow', 'ROS 2', 'Simulation APIs', 'Python (Advanced)', 'AI Analytics'],
   },
   {
     category: 'Industrial & IoT',
     icon: '🏭',
     color: 'pink',
-    skills: ['PLC Programming (Siemens)', 'Profibus Networking', 'ESP32 / Embedded C++', 'UDP Networking', 'PCB Design', 'Industrial Automation'],
+    skills: ['ESP32 / Embedded C++', 'Raspberry Pi CM4', 'Sensor Integration', 'UDP Networking', 'PCB Design', 'AWS'],
   },
   {
     category: 'Software & DevOps',
@@ -248,7 +248,6 @@ const EDUCATION: EduItem[] = [
     degree: 'Bachelor in Mechanical Engineering & Production Technology',
     institution: 'Saimaa University of Applied Sciences',
     period: '2013 – 2016',
-    note: 'Coursework included industrial automation with Siemens PLCs and Profibus networking.',
   },
 ];
 
@@ -789,7 +788,7 @@ const Skills: React.FC = () => {
           <p className="section-label">// tech stack</p>
           <h2 className="section-title">Skills</h2>
           <p className="section-subtitle">
-            From physics engines to PLC ladders — spanning simulation, AI, hardware, and software.
+            From physics engines to embedded hardware — spanning simulation, AI, hardware, and software.
           </p>
         </motion.div>
 
@@ -866,7 +865,7 @@ const Footer: React.FC = () => (
       <a className="footer-link" href="https://arxiv.org/abs/2510.26363" target="_blank" rel="noopener noreferrer">arXiv Paper ↗</a>
     </div>
     <div className="footer-copy">
-      © 2025 Ilya Kurinov · Lappeenranta, Finland · Open to relocation
+      © 2026 Ilya Kurinov · Espoo, Finland · Open to relocation
     </div>
   </footer>
 );
