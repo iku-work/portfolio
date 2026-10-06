@@ -865,7 +865,7 @@ const Footer: React.FC = () => (
       <a className="footer-link" href="https://arxiv.org/abs/2510.26363" target="_blank" rel="noopener noreferrer">arXiv Paper ↗</a>
     </div>
     <div className="footer-copy">
-      © 2026 Ilya Kurinov · Espoo, Finland · Open to relocation
+      © 2026 Ilya Kurinov · Finland · Open to relocation
     </div>
   </footer>
 );
